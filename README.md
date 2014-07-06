@@ -6,7 +6,7 @@ Use cookies to store session data. Highly scalable (no DB reads/writes) & statel
 
 ##### Recommendations:
 - It's recommended to encrypt cookie data to prevent tampering. 
-- Cookies have size limitations, domain limitations, etc. Make sure you understand these limits.
+- Cookies have size limitations, domain limitations, etc. Make sure you [understand these limits](http://browsercookielimits.x64.me/).
 
 ##### Examples:
 Example included. Upload the contents of the repo and load index.php in your browser.
