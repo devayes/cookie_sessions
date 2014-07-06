@@ -12,4 +12,4 @@ Use cookies to store session data. Highly scalable (no DB reads/writes) & statel
 Example included. Upload the contents of the repo and load index.php in your browser.
  
 ##### Notes:
-This is pretty old (2010), just thought I'd share it.
+This is pretty old (2010). It works, but there may be framework specific implementations that are as useful and more up to date.
