@@ -5,7 +5,7 @@ $sess = new Session();
 class Session {
           
     // Change these
-    const cookie_domain = '.localhost';
+    const cookie_domain = ''; // Leave blank for localhost, otherwise: .domain.com or www.domain.com
     const cookie_name = 'COOKIESESS';
     const cookie_lifetime = 604800; // 1 week;
     

@@ -14,7 +14,7 @@ if (isset($_POST['action'])) {
         break;
     }
     
-    header('location: '.$_SERVER['PHP_SELF']);
+    header('location: index.php');
     exit;
 }
 
