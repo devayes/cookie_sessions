@@ -24,12 +24,14 @@ class Session {
         ini_set('session.gc_maxlifetime', self::cookie_lifetime);   // Same as cookie lifetime. clean up is browser side
 
         // use this object as the session handler
-        session_set_save_handler(array($this, 'sessionOpen'),
-                                 array($this, 'sessionClose'),
-                                 array($this, 'sessionRead'),
-                                 array($this, 'sessionWrite'),
-                                 array($this, 'sessionDestroy'),
-                                 array($this, 'sessionGC'));
+        session_set_save_handler(
+            array($this, 'sessionOpen'),
+            array($this, 'sessionClose'),
+            array($this, 'sessionRead'),
+            array($this, 'sessionWrite'),
+            array($this, 'sessionDestroy'),
+            array($this, 'sessionGC')
+        );
         
         register_shutdown_function('session_write_close'); 
         
